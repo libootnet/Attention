@@ -19,7 +19,6 @@ func ScaledDotProductAttention(query, key, value Matrix) Matrix {
 		}
 	}
 
-	// softmax
 	scores := MatMul(query, Transpose(key))
 
 	for i := range scores {
