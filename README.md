@@ -4,11 +4,11 @@
 <br />
 The following implementation is a Go implementation of
 
-<br />
-
 ```
 Attention(Q, K, V) = softmax((Q * K^T) / sqrt(dK)) * V
 ```
+
+Implemented in Go
 
 ```go
 func ScaledDotProductAttention(query, key, value Matrix) Matrix {
