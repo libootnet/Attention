@@ -43,3 +43,17 @@ func ScaledDotProductAttention(query, key, value Matrix) Matrix {
 	return output
 }
 ```
+
+This function performs the forward computation for a Linear (fully connected) layer by applying the weight matrix W and bias vector B to the input matrix X.
+
+```go
+func (l *Linear) Forward(x Matrix) Matrix {
+	y := MatMul(x, l.W)
+	for i := range y {
+		for j := range y[i] {
+			y[i][j] += l.B[j]
+		}
+	}
+	return y
+}
+```
