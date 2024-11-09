@@ -56,3 +56,5 @@ func (l *Linear) Forward(x Matrix) Matrix {
 	return y
 }
 ```
+
+[wiki](https://en.wikipedia.org/wiki/Attention_(machine_learning)).
