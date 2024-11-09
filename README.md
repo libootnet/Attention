@@ -4,7 +4,7 @@
 <br />
 The following implementation is a Go implementation of
 
-
+<br />
 ```
 Attention(Q, K, V) = softmax((Q * K^T) / sqrt(dK)) * V
 ```
