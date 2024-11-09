@@ -1,6 +1,6 @@
 # Attention
 
-## This repo is a simplified implementation of attention theory in the GoLang.
+### This repo is a simplified implementation of attention theory in the Go.
 <br />
 The following implementation is a Go implementation of
 
